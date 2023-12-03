@@ -164,7 +164,7 @@ def mocked_first_data():
 
 @pytest.fixture
 def mocked_data_flag_to():
-    return "Счет 4324 **** **** 2869"
+    return "Счет  **2869"
 
 
 @pytest.fixture
@@ -189,7 +189,7 @@ def mocked_flag_to_from():
 @pytest.fixture
 def mocked_result_flag_to():
     return """
-    19.11.2019 Перевод организации\nСчет 4324 **** **** 2869\n30153.72 руб.
+    19.11.2019 Перевод организации\nСчет  **2869\n30153.72 руб.
     """
 
 
@@ -201,7 +201,7 @@ def mocked_data_flag_from():
 @pytest.fixture
 def mocked_result_flag_from():
     return """
-    19.11.2019 Перевод организации\nMaestro 7810 **** **** 5568 -->> Счет 4324 **** **** 2869\n30153.72 руб.
+    19.11.2019 Перевод организации\nMaestro 7810 **** **** 5568 -->> Счет  **2869\n30153.72 руб.
     """
 
 
